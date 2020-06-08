@@ -10,6 +10,9 @@ db_name=$3
 psql_user=$4
 psql_password=$5
 
+# Set up Crontab environmental password
+export PGPASSWORD=$psql_password
+
 # Check to see if user entered the correct amount of arguments
 if [ $# -ne 5 ];
 then
