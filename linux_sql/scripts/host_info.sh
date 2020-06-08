@@ -82,6 +82,7 @@ insert_info() {
 }
 
 # Execute the functions
+get_hostname
 get_cpu_number
 get_cpu_architecture
 get_cpu_model
