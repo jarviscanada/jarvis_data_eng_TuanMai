@@ -14,7 +14,7 @@ then
 fi
 
 # Check if docker container is running; if not, start docker container
-sudo systemct1 status docker || sudo systemctl start docker
+sudo systemctl status docker || sudo systemctl start docker
 
 # If user wants to create, create a docker container with the username and password passed in
 # Check if user used create command and has the correct number of arguments
