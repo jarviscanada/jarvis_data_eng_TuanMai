@@ -15,7 +15,7 @@ Monitoring Agent will run every minute and record the resource usage. This colle
 will be used by the LCA for improvements and changes.
 
 ## Architecture and Design
-![Linux Cluster Monitoring Agent Architecture and Design](./assets/Linux Cluster Monitoring Agent Architecture and Design.png)
+![Linux Cluster Monitoring Agent Architecture and Design](./assets/Linux_Cluster_Montoring_Agent_Architecture_and_Design.png)
 
 As described above in the Linux Cluster Monitoring Agent Architecture and Design diagram, the Bash (Host) agent scripts
 are run on every node in the Linux Cluster and will be stored into the database. For the nodes to communicate
