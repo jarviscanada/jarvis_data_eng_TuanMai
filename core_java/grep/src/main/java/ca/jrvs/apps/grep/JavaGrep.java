@@ -20,6 +20,24 @@ public interface JavaGrep {
     List<File> listFiles(String rootDir);
 
     /**
+     * Read a file and return all the lines
+     *
+     * Explain FileReader, BufferedReader, and character encoding
+     *
+     * @param inputFile file to be read
+     * @return lines
+     * @throws IllegalArgumentException if a given input file is not a file
+     */
+    List<String> readLines(File inputFile);
+
+    /**
+     * check if a line contains the regex pattern (passed by user)
+     * @param line input string
+     * @return true if there is a match
+     */
+    boolean containsPattern(String line);
+
+    /**
      * Write lines to a file
      *
      * Explore: FileOutputStream, OutputStreamWriter, and BufferedWriter
