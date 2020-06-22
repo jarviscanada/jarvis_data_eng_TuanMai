@@ -3,6 +3,8 @@ package ca.jrvs.apps.grep;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -150,6 +152,8 @@ public class JavaGrepImp implements JavaGrep {
         if (args.length != 3) {
             throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
         }
+
+        BasicConfigurator.configure(); // Create configuration for log4j
 
         JavaGrepImp javaGrepImp = new JavaGrepImp();
         javaGrepImp.setRegex(args[0]);
