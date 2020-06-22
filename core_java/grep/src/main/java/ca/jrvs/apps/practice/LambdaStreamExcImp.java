@@ -120,7 +120,7 @@ public class LambdaStreamExcImp implements LambdaStreamExc {
      */
     @Override
     public IntStream getOdd(IntStream intStream) {
-        return intStream.filter(i -> i % 2 == 0);
+        return intStream.filter(i -> i % 2 != 0);
     }
 
     /**
@@ -145,7 +145,8 @@ public class LambdaStreamExcImp implements LambdaStreamExc {
      */
     @Override
     public Consumer<String> getLambdaPrinter(String prefix, String suffix) {
-        return s -> System.out.println(prefix + s + suffix);
+        Consumer<String> consumer = (s -> System.out.print(prefix + s + suffix));
+        return consumer;
     }
 
     /**
