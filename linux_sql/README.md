@@ -72,7 +72,7 @@ is used to get information on the cluster and manage the different usages
     2. Calculating and displaying the average amount of memory used over a 5-minute interval of each node
     
 ## Usage
-#####1. Database and Table Initialization
+##### 1. Database and Table Initialization
 In order to create the database and table, the PostgreSQL instance must be provisioned and running.
 To create the PSQL Docker container and tables, run the following: 
 
@@ -86,7 +86,7 @@ To create the PSQL Docker container and tables, run the following:
 psql -h psql_host -d psql_database -U psql_user -W linux_sql/sql/ddl.sql
 ```
 
-#####2. *host_info.sh* Usage
+##### 2. *host_info.sh* Usage
 This script will only be required to run once on each new node. This will gather the hardware specifications 
 and store it into the `host_info` table.
 
@@ -97,7 +97,7 @@ and store it into the `host_info` table.
 ./linux_sql/scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
 ```
 
-#####3. *host_usage.sh* Usage
+##### 3. *host_usage.sh* Usage
 This script will gather the node's current resource usage and store them into the `host_usage` table.
 
 ```shell script
@@ -105,7 +105,7 @@ This script will gather the node's current resource usage and store them into th
 ./linux_sql/scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
 ```
 
-#####4. Crontab setup
+##### 4. Crontab setup
 To get the script to run every minute, crontab jobs are able to repeatedly run certain scripts with the specified time interval given
 
 ```shell script
@@ -124,7 +124,7 @@ crontab -ls
 cat /tmp/host_usage.log
 ```
 
-##Improvements
+## Improvements
 1. The Linux Cluster Monitoring Agent can be improved be having a check to see if any of the nodes have 
 stopped communicating or failed and report that to the LCA. 
 2. It would be go to create a redundant system to back up the data in case one of the databases has issues
