@@ -1,6 +1,8 @@
 package ca.jrvs.apps.jdbc;
 
 import ca.jrvs.apps.jdbc.util.DataAccessObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.xml.transform.Result;
 import java.sql.Connection;
@@ -10,6 +12,8 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class CustomerDAO extends DataAccessObject<Customer> {
+
+    final Logger logger = LoggerFactory.getLogger(CustomerDAO.class);
 
     private static final String INSERT = "INSERT INTO customer (first_name, last_name, email, phone, address, city, state, zipcode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -46,8 +50,7 @@ public class CustomerDAO extends DataAccessObject<Customer> {
             }
 
         } catch (SQLException ex) {
-            ex.printStackTrace();
-            throw new RuntimeException(ex);
+            throw new RuntimeException("ERROR: Could not find the Customer.",ex);
         }
         return customer;
     }
@@ -88,11 +91,9 @@ public class CustomerDAO extends DataAccessObject<Customer> {
             try {
                 this.connection.rollback();
             } catch (SQLException sqlex) {
-                ex.printStackTrace();
-                throw new RuntimeException(sqlex);
+                throw new RuntimeException("ERROR: Unable to rollback.",sqlex);
             }
-            ex.printStackTrace();
-            throw new RuntimeException(ex);
+            throw new RuntimeException("ERROR: Unable to update.", ex);
         }
         return customer;
     }
@@ -115,8 +116,7 @@ public class CustomerDAO extends DataAccessObject<Customer> {
             return this.findById(id);
 
         } catch (SQLException ex) {
-            ex.printStackTrace();
-            throw new RuntimeException(ex);
+            throw new RuntimeException("ERROR: Unable to create.", ex);
         }
     }
 
@@ -129,8 +129,7 @@ public class CustomerDAO extends DataAccessObject<Customer> {
             statement.execute();
 
         } catch (SQLException ex) {
-            ex.printStackTrace();
-            throw new RuntimeException(ex);
+            throw new RuntimeException("ERROR: There was an error trying to DELETE query.", ex);
         }
     }
 }

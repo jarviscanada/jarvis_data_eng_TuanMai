@@ -113,7 +113,7 @@ public class JavaGrepImp implements JavaGrep {
                 lines.add(line);
             }
         } catch (IOException ex) {
-            logger.error(ex.getMessage(), ex);
+            logger.error("ERROR: Unable to read lines. Please ensure proper input file was added." , ex);
         }
         return lines;
     }
@@ -144,7 +144,7 @@ public class JavaGrepImp implements JavaGrep {
                 bw.newLine();
             }
         } catch (IOException ex) {
-            logger.error(ex.getMessage(), ex);
+            logger.error("ERROR: Unable to write to file. Please ensure the output file is correct.", ex);
         }
     }
 
@@ -163,7 +163,7 @@ public class JavaGrepImp implements JavaGrep {
         try {
             javaGrepImp.process();
         } catch (Exception ex) {
-            javaGrepImp.logger.error(ex.getMessage(), ex);
+            javaGrepImp.logger.error("ERROR: Cannot process this task. Please ensure all parameters are correct.", ex);
         }
     }
 }
