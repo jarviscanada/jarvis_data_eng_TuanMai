@@ -24,7 +24,7 @@ public class TwitterHttpHelperTest {
 
         logger.debug(consumerKey + "|" + consumerSecret + "|" + accessToken + "|" + tokenSecret);
         HttpHelper httpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
-        HttpResponse response = httpHelper.httpPost(new URI("https://api.twitter.com/1.1/statuses/update.json?status=Hello%20World!"));
+        HttpResponse response = httpHelper.httpPost(new URI("https://api.twitter.com/1.1/statuses/update.json?status=Hello%20World")); //Cannot add !
         logger.debug(EntityUtils.toString(response.getEntity()));
     }
 }
