@@ -3,6 +3,7 @@ package ca.jrvs.apps.twitter.dao;
 import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
 import ca.jrvs.apps.twitter.example.JsonParser;
 import ca.jrvs.apps.twitter.model.Tweet;
+import ca.jrvs.apps.twitter.util.JsonUtil;
 import com.google.gdata.util.common.base.PercentEscaper;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
@@ -34,6 +35,10 @@ public class TwitterDao implements CrdDao<Tweet, String> {
 
     private HttpHelper httpHelper;
 
+    public TwitterDao(HttpHelper httpHelper) {
+        this.httpHelper = httpHelper;
+    }
+
     /**
      * Create an entity(Tweet) to the underlying storage
      *
@@ -56,7 +61,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
         return parseResponseBody(response, HTTP_OK);
     }
 
-    private Tweet parseResponseBody(HttpResponse response, Integer expectedStatusCode) {
+    public Tweet parseResponseBody(HttpResponse response, Integer expectedStatusCode) {
         Tweet tweet = null;
 
         // Check response status
@@ -84,7 +89,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
 
         // Convert JSON string to Tweet object
         try {
-            tweet = JsonParser.toObjectFromJson(jsonStr, Tweet.class);
+            tweet = JsonUtil.toObjectFromJson(jsonStr, Tweet.class);
         } catch (IOException ex) {
             throw new RuntimeException("Failed to convert JSON string to object", ex);
         }
