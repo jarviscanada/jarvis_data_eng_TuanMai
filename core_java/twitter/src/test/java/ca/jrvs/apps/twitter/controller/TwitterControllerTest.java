@@ -21,7 +21,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class TwitterControllerTest {
-    static final Logger logger = LoggerFactory.getLogger(TwitterDaoTest.class);
+    static final Logger logger = LoggerFactory.getLogger(TwitterControllerTest.class);
 
     TwitterService twitterService;
     TwitterController twitterController;
