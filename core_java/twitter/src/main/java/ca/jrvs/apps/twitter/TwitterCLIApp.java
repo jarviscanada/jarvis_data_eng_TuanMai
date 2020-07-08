@@ -15,7 +15,10 @@ import ca.jrvs.apps.twitter.util.TweetUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TwitterCLIApp {
 
     public static final String USAGE = "USAGE: TwitterCLIApp post|show|delete [options].";
@@ -23,6 +26,7 @@ public class TwitterCLIApp {
 
     private Controller controller;
 
+    @Autowired
     public TwitterCLIApp(Controller controller) {
         this.controller = controller;
     }
@@ -43,7 +47,7 @@ public class TwitterCLIApp {
         app.run(args);
     }
 
-    private void run(String[] args) {
+    public void run(String[] args) {
         if (args.length == 0 ) {
             throw new IllegalArgumentException(USAGE);
         }
