@@ -6,6 +6,14 @@ package ca.jrvs.practice.codingChallenge;
  */
 public class CountPrimes {
 
+    /**
+     * Approach 1
+     * Time complexity : O(n)
+     * first for loop is O(n), check is constant, inner for loop runs O(sqrt n) times
+     * Thus, applying the Big O Notation , we get O(n)
+     * @param num
+     * @return
+     */
     public int countPrimes(int num) {
         // Check if the number entered is greater than 2
         // if not, no primes
