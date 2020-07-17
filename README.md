@@ -12,19 +12,28 @@ also solves some of the most complex problems, which I am enthusiastic about bei
 
 ## Skills
 
-**Proficient:** Java, C#, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Java, C#, OpenCV, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
 
-**Competent:** Python, C++, Swift, JavaScript, HTML, MATLAB
+**Competent:** Python, C++, Swift, Android, JavaScript, Unity, HTML, MATLAB, Machine Learning, Docker, Spring Framework
 
-**Familiar:** Node.js, React 
+**Familiar:** Node.js, React, Assembly, Ruby, Ruby on Rails
 
 ## Development Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_TuanMai](https://github.com/jarviscanada/jarvis_data_eng_TuanMai)
 
-- **[Cluster Monitor](./linux_sql)**: Implemented a Cluster Monitoring Agent that allows users to monitor nodes in a cluster by storing each nodes' hardware specifications, as well as resource usages and store into a RDBMS Database in realtime. 
-This project implements many bash scripts, SQL, Docker, PostgreSQL.
-- **[Core Java Apps](./core_java)**: Implemented three Java applications that: replicates a recursive grep tool in a Linux based system, a simple JDBC application, and a Twitter CLI Application to explore REST API. The application all implemented Maven, as well as JUnit and Mockito for testing. 
+- **[Cluster Monitor](./linux_sql)**: Developed a Cluster Monitoring Agent that allows users to monitor nodes in a cluster by storing each nodes' hardware specifications, as well as resource usages and store into a RDBMS Database in realtime. 
+This project contains many bash scripts to automate the creation of SQL databases, generate tables, create|start|stop Docker, and run PostgreSQL queries.
+- **[Core Java Apps](./core_java)**: Developed three Java applications, all three applications implement Maven 
+for build automation, as well as JUnit and Mockito for testing. The three applications built are:
+  - GREP app - replicates the recursive grep tool in a Linux based system. The grep application searches recursively 
+  in a given directory for a specified text pattern and outputs it to the user. This application uses Java I/O, regex, and stream APIs.
+  
+  - JDBC application - a Java Database Connectivity application that connects to a PostgreSQL database using the 
+  Java-based data access technology. Following the DAO pattern, the user can do CRUD (create, read, update, delete) 
+  operations. 
+  - Twitter CLI Application - an application to explore REST API by interacting with Twitter's API using HTTP 
+  GET/POST requests and responses to perform CR~~U~~D (create, read, ~~update~~, delete) actions on tweets. 
 - **[SpringBoot App](./springboot)**: In-progress
 - **[Cloud & DevOps](./cloud_devops)**: Not started
 - **[Hadoop](./hadoop)**: Not started
@@ -33,8 +42,9 @@ This project implements many bash scripts, SQL, Docker, PostgreSQL.
 ## Professional Experiences
 
 **Data Engineer, Jarvis, Toronto (2020-Present):** Worked as a Junior Data Engineer in a small team collaborating 
-to develop a series of product applications. Implemented three Java applications which utlized Maven, RDBMS, REST API, 
-and Spring Framework. Testing done during development with JUnit and Mockito. 
+to develop a series of product applications. Implemented three Java applications which utilized Maven, RDBMS, REST API, and Spring Framework. Testing done during development with JUnit and Mockito. 
+Agile methodology is use in our team for collaboration and software development management. Daily Scrum meeting with the team to ensure 
+everyone will meet deadlines and any issues would be resolved. Experience with WFH (working from home) and ability to collaborate with teammates effectively. 
 
 **Mobile Application Developer, Encore Market Engagement, Oakville (2016-2018):** Worked in a small team of 4 to design,
 prototype, and develop a solution for a current retail market management bottleneck. Worked as both a Mobile Application 
