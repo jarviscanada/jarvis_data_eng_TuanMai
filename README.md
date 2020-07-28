@@ -7,7 +7,7 @@ designing and developing an iOS application for the iPad that utilizes computer 
 from store shelves. Along with my work experience, the final year focused on my Undergraduate Thesis which was 
 developing an augmented reality visualization system of polycystic kidney disease for preoperative planning. 
 
-Data Engineering has been a passion of mine and excites me as it allows me to explore data that can be used to help benefit society. Data engineering 
+Data Engineering has been a passion of mine and excites me as it allows me to explore data that can be used to benefit society. Data engineering 
 also solves some of the most complex problems, which I am enthusiastic about being a part of. 
 
 ## Skills
@@ -41,9 +41,9 @@ for build automation, as well as JUnit and Mockito for testing. The three applic
 
 ## Professional Experiences
 
-**Data Engineer, Jarvis, Toronto (2020-Present):** Worked as a Junior Data Engineer in a small team collaborating 
+**Data Engineer, Jarvis, Toronto (2020-Present):** Working as a Junior Data Engineer in a small team collaborating 
 to develop a series of product applications. Implemented three Java applications which utilized Maven, RDBMS, REST API, and Spring Framework. Testing done during development with JUnit and Mockito. 
-Agile methodology is use in our team for collaboration and software development management. Daily Scrum meeting with the team to ensure 
+Agile methodology is used in our team for collaboration and software development management. Daily Scrum meeting with the team to ensure 
 everyone will meet deadlines and any issues would be resolved. Experience with WFH (working from home) and ability to collaborate with teammates effectively. 
 
 **Mobile Application Developer, Encore Market Engagement, Oakville (2016-2018):** Worked in a small team of 4 to design,
@@ -52,7 +52,7 @@ Developer and Team Lead to design an application to detect products of interest 
 developed an iOS (Swift) application that uses machine learning and computer vision (OpenCV) to enhance sales 
 representatives' routine.
 
-**Academic Researcher, Sheridan College, Oakville (2015-2015):** Responsible for researching different wearable technology 
+**Academic Researcher, Sheridan College, Oakville (2015-2015):** Responsible for researching different wearable technologies 
 that could be incorporated into academia. Additionally, worked on integrating wearable devices to help aid and improve 
 within academia by increasing proficiency of students and encourage learning. 
 
