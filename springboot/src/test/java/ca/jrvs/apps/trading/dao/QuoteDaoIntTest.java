@@ -52,14 +52,14 @@ public class QuoteDaoIntTest {
         testQuote.setId("FB");
         testQuote.setLastPrice(20.1d);
         quoteDao.save(testQuote);
-        Quote quote = quoteDao.findById(testQuote.getId()).get();
+        Quote quote = quoteDao.findById(testQuote.getTicker()).get();
         assertEquals(testQuote, quote);
     }
 
 
     @Test
     public void findById() {
-        Quote quote = quoteDao.findById(savedQuote.getId()).get();
+        Quote quote = quoteDao.findById(savedQuote.getTicker()).get();
         assertEquals(savedQuote, quote);
     }
 

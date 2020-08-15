@@ -11,7 +11,7 @@ public class Quote implements Entity<String> {
 
     @Override
     public String getId() {
-        return ticker;
+        return null;
     }
 
     @Override

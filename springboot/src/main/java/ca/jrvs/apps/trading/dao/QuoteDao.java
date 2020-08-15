@@ -85,7 +85,7 @@ public class QuoteDao implements CrudRepository<Quote, String> {
     }
 
     @Override
-    public Iterable<Quote> findAll() {
+    public List<Quote> findAll() {
         return getAllQuotes();
     }
 
