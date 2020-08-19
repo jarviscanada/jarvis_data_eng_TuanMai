@@ -77,9 +77,9 @@ public class SecurityOrderDao extends JdbcCrudDao<SecurityOrder> {
         throw new UnsupportedOperationException("Not implemented");
     }
 
-    public List<SecurityOrderDao> findAllByAccountId(Integer accountId) {
+    public List<SecurityOrder> findAllByAccountId(Integer accountId) {
         String selectSql = "SELECT * FROM " + TABLE_NAME + " WHERE " + accountId + "=?";
-        List<SecurityOrderDao> orders = jdbcTemplate.query(selectSql, BeanPropertyRowMapper.newInstance(SecurityOrderDao.class), accountId);
+        List<SecurityOrder> orders = jdbcTemplate.query(selectSql, BeanPropertyRowMapper.newInstance(SecurityOrder.class), accountId);
         return orders;
     }
 }

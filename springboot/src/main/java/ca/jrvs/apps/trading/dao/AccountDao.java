@@ -98,12 +98,11 @@ public class AccountDao extends JdbcCrudDao<Account> {
         return account;
     }
 
-    public Account updateAccountById(Integer id, Double amount) {
-        String updateSql = "UPDATE " + getTableName() + " SET amount=?"
-                + " WHERE " + getIdColumnName() + "=?";
+    public Account updateAccountById(Account account, Double amount) {
+        String updateSql = "UPDATE " + getTableName() + " SET amount=?" + " WHERE " + getIdColumnName() + "=?";
 
-        int update = jdbcTemplate.update(updateSql, amount, id);
-        Optional<Account> account = findById(id);
-        return account.get();
+        int update = jdbcTemplate.update(updateSql, amount, account.getId());
+        Optional<Account> tempAccount = findById(account.getId());
+        return tempAccount.get();
     }
 }
