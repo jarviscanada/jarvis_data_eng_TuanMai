@@ -78,9 +78,8 @@ public class SecurityOrderDao extends JdbcCrudDao<SecurityOrder> {
     }
 
     public List<SecurityOrderDao> findAllByAccountId(Integer accountId) {
-        String selectSql = "SELECT * FROM " + TABLE_NAME + " WHERE account_id=?";
-        List<SecurityOrderDao> orders = jdbcTemplate
-                .query(selectSql, BeanPropertyRowMapper.newInstance(SecurityOrderDao.class), accountId);
+        String selectSql = "SELECT * FROM " + TABLE_NAME + " WHERE " + accountId + "=?";
+        List<SecurityOrderDao> orders = jdbcTemplate.query(selectSql, BeanPropertyRowMapper.newInstance(SecurityOrderDao.class), accountId);
         return orders;
     }
 }
