@@ -3,6 +3,8 @@ Table of contents
 * [Quick Start](#Quick Start)
 * [Architecture](#Architecture)
 * [REST API Usage](#REST API Usage)
+* [Docker Deployment](#Docker-Deployment)
+* [Improvements](#Improvements)
 
 # Introduction
 The Springboot project centralizes on building an online trading simulation application. The project uses REST API to allow users to 
@@ -114,7 +116,7 @@ Trader Controller also manages the withdrawal and deposit of funds for a trader.
    - PUT `/trader/traderId/{traderId}/amount/{amount}`: deposit the amount specified into the trader account based on traderId
    - PUT `/trader/withdraw/traderId/{traderId}/amount/{amount}`: withdraw the amount specified from the trader account based on traderId. Amount cannot be greater than the balance.
 
-##Order Controller
+## Order Controller
 The Order Controller is a controller that handle the execution of the placement for buying and selling orders.
 The Order Controller has the following endpoint:
 
