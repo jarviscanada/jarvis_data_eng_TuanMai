@@ -1,8 +1,8 @@
-Table of contents
+# Table of contents
 * [Introduction](#Introduction)
-* [Quick Start](#Quick Start)
+* [Quick Start](#Quick-Start)
 * [Architecture](#Architecture)
-* [REST API Usage](#REST API Usage)
+* [REST API Usage](#REST-API-Usage)
 * [Docker Deployment](#Docker-Deployment)
 * [Improvements](#Improvements)
 
@@ -80,7 +80,7 @@ The service layer will make respective calls to the DAO layer to pass the data f
 
 ##### DAO layer
 The DAO layer is the Data Access Object layer which deals with data persistence as well as getting and saving data to the database. 
-The DAO will also update quotes to the IEX Cload through an HTTP Client. 
+The DAO will also update quotes to the IEX Cloud through an HTTP Client. 
 
 ##### SpringBoot: webservlet/TomCat and IoC
 This application uses Springboot for dependency injection as well as managing the instantiating, creating beans, and going through 
