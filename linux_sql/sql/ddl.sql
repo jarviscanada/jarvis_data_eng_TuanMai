@@ -3,6 +3,7 @@
 -- Connect to the database
 \c host_agent;
 
+
 -- Create table "host_info" if it does not exist
 CREATE TABLE IF NOT EXISTS PUBLIC.host_info
 (
