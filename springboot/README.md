@@ -124,7 +124,7 @@ The Order Controller has the following endpoint:
    if the size is negative, attempt to sell an order. 
 
 # Docker Deployment
-![Trading App Docker](assets/Trading_App_Docker.jpg)
+![Trading App Docker](assets/Trading_App_Docker.png)
 
 - `trading-psql` docker image based on the official Postgres docker image. This image will contain .sql scripts to build tables and initialize them. 
 - `trading-app` docker image based on the openjdk:8-alpine image. This image will compile the code using Maven on a container and then run the application.
