@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Notes
 # bash scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
 

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Setup Arguments
 CONTAINER_NAME="jrvs-psql"
 command=$1

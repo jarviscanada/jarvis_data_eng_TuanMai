@@ -70,6 +70,7 @@ get_total_mem() {
   total_mem=$(echo $(grep MemTotal /proc/meminfo) | awk '{print $2}' | xargs)
 }
 
+
 # Get function for getting timestamp
 get_timestamp() {
   get_lscpu_value ""
