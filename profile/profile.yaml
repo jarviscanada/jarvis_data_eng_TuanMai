@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_TuanMai
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: "I am a recent graduate receiving my Honours Bachelor of Computer Science (B.CS.) in 2019 from Sheridan College. With great experience as a mobile application developer and researcher with a strong passion for Engineering, whether it be software or hardware. Moreover, I also have a strong background in cross domain fields of health, as well as retail management. During the program, I experienced three co-op terms working as a mobile application developer, designing and developing an iOS application for the iPad that utilizes computer vision to detect distinct products from store shelves. Along with my work experience, the final year focused on my Undergraduate Thesis which was developing an augmented reality visualization system of polycystic kidney disease for preoperative planning.
+summary: "I am a recent graduate receiving my Honours Bachelor of Computer Science (B.CS.) in 2019 from Sheridan College. With great experience as a mobile application developer and researcher with a strong passion for Engineering, whether it be software or hardware. Moreover, I also have a strong background in cross-domain fields of health, as well as retail management. During the program, I experienced three co-op terms working as a mobile application developer, designing and developing an iOS application for the iPad that utilizes computer vision to detect distinct products from store shelves. Along with my work experience, the final year focused on my Undergraduate Thesis which was developing an augmented reality visualization system of polycystic kidney disease for preoperative planning.
 
 Data Engineering has been a passion of mine and excites me as it allows me to explore data that can be used to benefit society. Data engineering also solves some of the most complex problems, which I am enthusiastic about being a part of."
 
@@ -48,7 +48,7 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programing langauge, libraries, algorithms, hardwards, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Developed a Cluster Monitoring Agent that allows users to monitor nodes in a cluster by storing each nodes' hardware specifications, as well as resource usages and store into a RDBMS Database in realtime. This project contains many bash scripts to automate the creation of SQL databases, generate tables, create, start, stop Docker, and run PostgreSQL queries.
+    description: Developed a Cluster Monitoring Agent that allows users to monitor nodes in a cluster by storing each nodes' hardware specifications, as well as resource usages and store into an RDBMS Database in realtime. This project contains many bash scripts to automate the creation of SQL databases, generate tables, create, start, stop Docker, and run PostgreSQL queries.
   - name: "Core Java Apps"
     git_url: "/core_java"
     description: 
@@ -62,7 +62,7 @@ jarvis_projects:
       - "Grep App: replicates the recursive grep tool in a Linux based system. The grep application searches recursively in a given directory for a specified text pattern and outputs it to the user. This application uses Java I/O, regex, and stream APIs."
   - name: "Springboot App"
     git_url: "/springboot"
-    description: "Created an online trading simulation application. The project uses REST API to allow users to create and manage their trader account while using it to make orders and trades on the market. This application is a microservice which is implemented with Springboot for dependency injection. The application stores trader accounts, quotes, orders onto a PSQL database. The IEX Market Data are stored on and used from IEX Cloud's API."
+    description: "Created an online trading simulation application. The project uses REST API to allow users to create and manage their trader account while using it to make orders and trades on the market. This application is a microservice which is implemented with Springboot for dependency injection. The application stores trader accounts, quotes, orders onto a PSQL database. The IEX Market Data is stored on and used from IEX Cloud's API."
   - name: "Hadoop"
     git_url: "/hadoop"
     description: "In-progress"
@@ -81,7 +81,7 @@ highlighted_projects:
     #URL is optional
     git_url: "https://github.com/Tuan-Mai/Undergraduate-Thesis"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Desinged and developed a wearable augmented reality system for the Microsoft HoloLens that reconstructs the anatomy of a patient's kidneys in an interactive three-dimensional model based on preoperative CTs scanned for improving the current treatment planning system of laparoscopic cyst decortication. The application was written in C# and Unity to deploy onto the Microsoft HoloLens."
+    description: "Designed and developed a wearable augmented reality system for the Microsoft HoloLens that reconstructs the anatomy of a patient's kidneys in an interactive three-dimensional model based on preoperative CTs scanned for improving the current treatment planning system of laparoscopic cyst decortication. The application was written in C# and Unity to deploy onto the Microsoft HoloLens."
 
 #List of professional expereince
 #The job description allows hiring managers to understand your job and technologies you used(e.g. programing langauge, libraries, algorithms, hardwards, tools, etc.).
@@ -92,7 +92,7 @@ professional_experience:
     company: "Jarvis"
     duration: "2020-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Working as a Junior Data Engineer in a small team collaborating to develop a series of product applications. Implemented three Java applications which utilized Maven, RDBMS, REST API, and Spring Framework. Testing done during development with JUnit and Mockito. Agile methodology is used in our team for collaboration and software development management. Daily Scrum meeting with the team to ensure everyone will meet deadlines and any issues would be resolved. Experience with WFH (working from home) and ability to collaborate with teammates effectively."
+    description: "Working as a Junior Data Engineer in a small team collaborating to develop a series of product applications. Implemented three Java applications that utilized Maven, RDBMS, REST API, and Spring Framework. Testing done during development with JUnit and Mockito. Agile methodology is used in our team for collaboration and software development management. Daily Scrum meeting with the team to ensure everyone will meet deadlines and any issues would be resolved. Experience with WFH (working from home) and the ability to collaborate with teammates effectively."
   - title: "Mobile Application Developer"
     company: "Encore Market Engagement"
     duration: "2016-2018"
@@ -100,7 +100,7 @@ professional_experience:
   - title: "Academic Researcher"
     company: "Sheridan College"
     duration: "2015-2015"
-    description: "Responsible for researching different wearable technologies that could be incorporated into academia. Additionally, worked on integrating wearable devices to help aid and improve within academia by increasing proficiency of students and encourage learning."
+    description: "Responsible for researching different wearable technologies that could be incorporated into academia. Additionally, worked on integrating wearable devices to help aid and improve within academia by increasing the proficiency of students and encourage learning."
 
 #List of edcuation
 education: 
@@ -110,15 +110,17 @@ education:
     department: "Computer Science"
     # optional
     awards_achievements: 
+      
       - "Undergraduate Thesis: Designed and developed a HoloLens augmented reality application (C#) that allows medical professionals to better plan surgical procedures, and enable real-time collaboration. The application reads in a patient's DICOM files (CTs, MRIs, US) then reconstructs the scanned organ in an interactive 3D model. This gives medical professionals more spatial information on the organ as well as a higher detail when viewing the organ in 3D versus referring to 2D images."
-      - "Microsoft Imagine Cup: Team lead for a 3-person team competing in Microsoft's Imagine Cup, building an application to assist disabled citizens. The project revolved around exploring the usage of the Microsoft Band in order to control motorized wheelchairs with wrist/arm motion.Microsoft Imagine Cup: Team lead for a 3-person team competing in Microsoft's Imagine Cup, building an application to assist disabled citizens. The project revolved around exploring the usage of the Microsoft Band in order to control motorized wheelchairs with wrist/arm motion."
+      
+      - "Microsoft Imagine Cup: Team lead for a 3-person team competing in Microsoft's Imagine Cup, building an application to assist disabled citizens. The project revolved around exploring the usage of the Microsoft Band to control motorized wheelchairs with wrist/arm motion."
   - school_name: "University of Ontario Institue of Technology"
     duration: "2012-2014"
     degree: "Bachelor of Engineering"
     department: "Electrical Engineering"
     awards_achievements: 
-      - "(Did not complete) Completed 60 Credits: Completed 60 credits towards Honours Bachelor of Electrical Engineering including courses such as: Electrical Engineering Fundamentals, Electronics, Circuit Analysis. Experience with lab equipment such as oscilloscopes."
-      - "Mentored high school FIRST Robotics Team: Mentored high school's FIRST Robotics team, guiding them on design and implementation of hardware and software components."
+      - "(Did not complete) Completed 60 Credits: Completed 60 credits towards Honours Bachelor of Electrical Engineering including courses such as Electrical Engineering Fundamentals, Electronics, Circuit Analysis. Experience with lab equipment such as oscilloscopes."
+      - "Mentored high school FIRST Robotics Team: Mentored high school's FIRST Robotics team, guiding them on the design and implementation of hardware and software components."
 
 #Optional section
 others:
@@ -126,8 +128,8 @@ others:
   - title: "Achievements"
     #list of items
     bullets:
-      - "Selected to showcase projects to: Tim Cook (Apple CEO) - Jan 23, 2018"
-      - "Selected to showcase projects to: Honourable Deb Matthews (Minister of Advanced Education and Skills Development) - Jan 17, 2017"
+      - "Selected to showcase projects to Tim Cook (Apple CEO) - Jan 23, 2018"
+      - "Selected to showcase projects to Honourable Deb Matthews (Minister of Advanced Education and Skills Development) - Jan 17, 2017"
   - title: "Awards"
     bullets:
       - "Mobile Computer Symposium Competition - First Place (Oct 25, 2016)"
