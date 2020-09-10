@@ -1,0 +1,140 @@
+# Preffered name (Characters only)
+name: "Tuan Mai"
+# Your github repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_TuanMai
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: "I am a recent graduate receiving my Honours Bachelor of Computer Science (B.CS.) in 2019 from Sheridan College. With great experience as a mobile application developer and researcher with a strong passion for Engineering, whether it be software or hardware. Moreover, I also have a strong background in cross-domain fields of health, as well as retail management. During the program, I experienced three co-op terms working as a mobile application developer, designing and developing an iOS application for the iPad that utilizes computer vision to detect distinct products from store shelves. Along with my work experience, the final year focused on my Undergraduate Thesis which was developing an augmented reality visualization system of polycystic kidney disease for preoperative planning.
+
+Data Engineering has been a passion of mine and excites me as it allows me to explore data that can be used to benefit society. Data engineering also solves some of the most complex problems, which I am enthusiastic about being a part of."
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - C#
+    - OpenCV
+    - Linux/Bash
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git
+  # At least 5 skills
+  competent:
+    - Python
+    - C++
+    - Swift
+    - Android
+    - JavaScript
+    - Unity
+    - HTML
+    - MATLAB
+    - Machine Learning
+    - Docker
+    - Spring Framework
+  # At least 5 skills
+  familiar:
+    - Node.js
+    - React
+    - Assembly
+    - Ruby
+    - Ruby on Rails
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programing langauge, libraries, algorithms, hardwards, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed a Cluster Monitoring Agent that allows users to monitor nodes in a cluster by storing each nodes' hardware specifications, as well as resource usages and store into an RDBMS Database in realtime. This project contains many bash scripts to automate the creation of SQL databases, generate tables, create, start, stop Docker, and run PostgreSQL queries.
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description: 
+
+      - "Developed three Java applications, all three applications implement Maven for build automation, as well as JUnit and Mockito for testing. The three applications built are:"
+
+      - "Twitter App: an application to explore REST API by interacting with Twitter's API using HTTP GET and POST requests and responses to perform CRD (create, read, delete) actions on tweets."
+
+      - "JDBC App: a Java Database Connectivity application that connects to a PostgreSQL database using the Java-based data access technology. Following the DAO pattern, the user can do CRUD (create, read, update, delete) operations."
+
+      - "Grep App: replicates the recursive grep tool in a Linux based system. The grep application searches recursively in a given directory for a specified text pattern and outputs it to the user. This application uses Java I/O, regex, and stream APIs."
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: "Created an online trading simulation application. The project uses REST API to allow users to create and manage their trader account while using it to make orders and trades on the market. This application is a microservice which is implemented with Springboot for dependency injection. The application stores trader accounts, quotes, orders onto a PSQL database. The IEX Market Data is stored on and used from IEX Cloud's API."
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: "In-progress"
+  - name: "Spark"
+    git_url: "/spark"
+    description: "Not started"
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: "Not started"
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "Undergraduate Thesis"
+    #URL is optional
+    git_url: "https://github.com/Tuan-Mai/Undergraduate-Thesis"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Designed and developed a wearable augmented reality system for the Microsoft HoloLens that reconstructs the anatomy of a patient's kidneys in an interactive three-dimensional model based on preoperative CTs scanned for improving the current treatment planning system of laparoscopic cyst decortication. The application was written in C# and Unity to deploy onto the Microsoft HoloLens."
+
+#List of professional expereince
+#The job description allows hiring managers to understand your job and technologies you used(e.g. programing langauge, libraries, algorithms, hardwards, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional expereince rather than training.
+  - title: "Data Engineer"
+    company: "Jarvis"
+    duration: "2020-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Working as a Junior Data Engineer in a small team collaborating to develop a series of product applications. Implemented three Java applications that utilized Maven, RDBMS, REST API, and Spring Framework. Testing done during development with JUnit and Mockito. Agile methodology is used in our team for collaboration and software development management. Daily Scrum meeting with the team to ensure everyone will meet deadlines and any issues would be resolved. Experience with WFH (working from home) and the ability to collaborate with teammates effectively."
+  - title: "Mobile Application Developer"
+    company: "Encore Market Engagement"
+    duration: "2016-2018"
+    description: "Worked in a small team of 4 to design, prototype, and develop a solution for a current retail market management bottleneck. Worked as both a Mobile Application Developer and Team Lead to design an application to detect products of interest in retail stores. Designed and developed an iOS (Swift) application that uses machine learning and computer vision (OpenCV) to enhance sales representatives' routine."
+  - title: "Academic Researcher"
+    company: "Sheridan College"
+    duration: "2015-2015"
+    description: "Responsible for researching different wearable technologies that could be incorporated into academia. Additionally, worked on integrating wearable devices to help aid and improve within academia by increasing the proficiency of students and encourage learning."
+
+#List of edcuation
+education: 
+  - school_name: "Sheridan College"
+    duration: "2014-2019"
+    degree: "Bachelor of Computer Science"
+    department: "Computer Science"
+    # optional
+    awards_achievements: 
+      
+      - "Undergraduate Thesis: Designed and developed a HoloLens augmented reality application (C#) that allows medical professionals to better plan surgical procedures, and enable real-time collaboration. The application reads in a patient's DICOM files (CTs, MRIs, US) then reconstructs the scanned organ in an interactive 3D model. This gives medical professionals more spatial information on the organ as well as a higher detail when viewing the organ in 3D versus referring to 2D images."
+      
+      - "Microsoft Imagine Cup: Team lead for a 3-person team competing in Microsoft's Imagine Cup, building an application to assist disabled citizens. The project revolved around exploring the usage of the Microsoft Band to control motorized wheelchairs with wrist/arm motion."
+  - school_name: "University of Ontario Institue of Technology"
+    duration: "2012-2014"
+    degree: "Bachelor of Engineering"
+    department: "Electrical Engineering"
+    awards_achievements: 
+      - "(Did not complete) Completed 60 Credits: Completed 60 credits towards Honours Bachelor of Electrical Engineering including courses such as Electrical Engineering Fundamentals, Electronics, Circuit Analysis. Experience with lab equipment such as oscilloscopes."
+      - "Mentored high school FIRST Robotics Team: Mentored high school's FIRST Robotics team, guiding them on the design and implementation of hardware and software components."
+
+#Optional section
+others:
+    #category
+  - title: "Achievements"
+    #list of items
+    bullets:
+      - "Selected to showcase projects to Tim Cook (Apple CEO) - Jan 23, 2018"
+      - "Selected to showcase projects to Honourable Deb Matthews (Minister of Advanced Education and Skills Development) - Jan 17, 2017"
+  - title: "Awards"
+    bullets:
+      - "Mobile Computer Symposium Competition - First Place (Oct 25, 2016)"
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Archery"
+      - "Computer Building/Modifications"
+      - "Building DIY Tech Devices"
