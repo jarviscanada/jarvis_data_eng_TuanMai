@@ -51,9 +51,14 @@
       "name": "Springboot App"
     },
     {
-      "description": "In-progress",
+      "description": "The Hadoop project was designed and developed to help data analytics teams in processing data by using Apache Hadoop. This project will have a Hadoop Cluster was provisioned with GCP and Core Hadoop components were evaluated including MapReduce, HDFS, and YARN. This project also evaluates and solves business problems with Apache Hive along with other big data tools and components. They were tested for efficiency and limitations of Hive, Bash, as well as Spark. The results and data have been written in a Zeppelin Notebook.",
       "git_url": "/hadoop",
       "name": "Hadoop"
+    },
+    {
+      "description": "In-progress",
+      "git_url": "/python_data_wrangling",
+      "name": "Python Data Wrangling \u0026 Analytics"
     },
     {
       "description": "Not started",

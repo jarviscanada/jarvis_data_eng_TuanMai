@@ -27,7 +27,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_TuanMai](h
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_TuanMai/tree/master/springboot)]: Created an online trading simulation application. The project uses REST API to allow users to create and manage their trader account while using it to make orders and trades on the market. This application is a microservice which is implemented with Springboot for dependency injection. The application stores trader accounts, quotes, orders onto a PSQL database. The IEX Market Data is stored on and used from IEX Cloud's API.
 
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_TuanMai/tree/master/hadoop)]: In-progress
+**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_TuanMai/tree/master/hadoop)]: The Hadoop project was designed and developed to help data analytics teams in processing data by using Apache Hadoop. This project will have a Hadoop Cluster was provisioned with GCP and Core Hadoop components were evaluated including MapReduce, HDFS, and YARN. This project also evaluates and solves business problems with Apache Hive along with other big data tools and components. They were tested for efficiency and limitations of Hive, Bash, as well as Spark. The results and data have been written in a Zeppelin Notebook.
+
+**Python Data Wrangling & Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_TuanMai/tree/master/python_data_wrangling)]: In-progress
 
 **Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_TuanMai/tree/master/spark)]: Not started
 
